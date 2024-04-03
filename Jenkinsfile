@@ -3,7 +3,7 @@ pipeline{
     tools {
         nodejs 'node'
     }
-    
+
     stages{
         stage('Build'){
             steps{
@@ -21,7 +21,6 @@ pipeline{
         stage('Deploy / Deliver '){
             steps{
                 echo 'Deploying the project...'
-                sh 'npm run deploy'
             }
         }
     }
